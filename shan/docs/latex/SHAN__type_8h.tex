@@ -1,0 +1,184 @@
+\hypertarget{SHAN__type_8h}{}\section{include/\+S\+H\+A\+N\+\_\+type.h File Reference}
+\label{SHAN__type_8h}\index{include/\+S\+H\+A\+N\+\_\+type.\+h@{include/\+S\+H\+A\+N\+\_\+type.\+h}}
+
+
+S\+H\+A\+N\+\_\+type header. Type conversion in shared memory.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}G\+A\+S\+P\+I.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+H\+A\+N\+\_\+segment.\+h\char`\"{}}\\*
+Include dependency graph for S\+H\+A\+N\+\_\+type.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SHAN__type_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{SHAN__type_8h_a319a7a3259b544163e6c72aa0b2f4530}{shan\+\_\+comm\+\_\+get\+\_\+local} (\hyperlink{structshan__neighborhood__t}{shan\+\_\+neighborhood\+\_\+t} $\ast$neighborhood\+\_\+id, \hyperlink{structshan__segment__t}{shan\+\_\+segment\+\_\+t} $\ast$data\+\_\+segment, const int type\+\_\+id, const int idx)
+\item 
+void \hyperlink{SHAN__type_8h_a9cc180e5b3e9c075498625cd61b16523}{shan\+\_\+comm\+\_\+get\+\_\+remote} (\hyperlink{structshan__neighborhood__t}{shan\+\_\+neighborhood\+\_\+t} $\ast$neighborhood\+\_\+id, \hyperlink{structshan__segment__t}{shan\+\_\+segment\+\_\+t} $\ast$const data\+\_\+segment, int const type\+\_\+id, int const idx)
+\item 
+int \hyperlink{SHAN__type_8h_ab8732eec39c8355b7f6b420ff147c4d6}{shan\+\_\+get\+\_\+shared\+\_\+type} (\hyperlink{structtype__local__t}{type\+\_\+local\+\_\+t} $\ast$type\+\_\+info, \hyperlink{structshan__neighborhood__t}{shan\+\_\+neighborhood\+\_\+t} $\ast$neighborhood\+\_\+id, int local\+\_\+rank, int num\+\_\+neighbors, int type\+\_\+id)
+\item 
+int \hyperlink{SHAN__type_8h_affaa110499283abb00fcc8f8c53de742}{shan\+\_\+comm\+\_\+type\+\_\+offset} (\hyperlink{structshan__neighborhood__t}{shan\+\_\+neighborhood\+\_\+t} $\ast$neighborhood\+\_\+id, int type\+\_\+id, int $\ast$$\ast$nelem\+\_\+send, int $\ast$$\ast$nelem\+\_\+recv, int $\ast$$\ast$send\+\_\+sz, int $\ast$$\ast$recv\+\_\+sz, long $\ast$$\ast$send\+\_\+offset, long $\ast$$\ast$recv\+\_\+offset)
+\item 
+int \hyperlink{SHAN__type_8h_aadc9431cf45a459770d1eb188bfd3c47}{shan\+\_\+comm\+\_\+get\+\_\+type} (\hyperlink{structtype__local__t}{type\+\_\+local\+\_\+t} $\ast$type\+\_\+info, void $\ast$shm\+\_\+ptr, int num\+\_\+neighbors, \hyperlink{structshan__element__t}{shan\+\_\+element\+\_\+t} $\ast$type\+\_\+element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+H\+A\+N\+\_\+type header. Type conversion in shared memory. 
+
+
+
+\subsection{Function Documentation}
+\index{S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}!shan\+\_\+comm\+\_\+get\+\_\+local@{shan\+\_\+comm\+\_\+get\+\_\+local}}
+\index{shan\+\_\+comm\+\_\+get\+\_\+local@{shan\+\_\+comm\+\_\+get\+\_\+local}!S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}}
+\subsubsection[{\texorpdfstring{shan\+\_\+comm\+\_\+get\+\_\+local(shan\+\_\+neighborhood\+\_\+t $\ast$neighborhood\+\_\+id, shan\+\_\+segment\+\_\+t $\ast$data\+\_\+segment, const int type\+\_\+id, const int idx)}{shan_comm_get_local(shan_neighborhood_t *neighborhood_id, shan_segment_t *data_segment, const int type_id, const int idx)}}]{\setlength{\rightskip}{0pt plus 5cm}void shan\+\_\+comm\+\_\+get\+\_\+local (
+\begin{DoxyParamCaption}
+\item[{{\bf shan\+\_\+neighborhood\+\_\+t} $\ast$}]{neighborhood\+\_\+id, }
+\item[{{\bf shan\+\_\+segment\+\_\+t} $\ast$}]{data\+\_\+segment, }
+\item[{const int}]{type\+\_\+id, }
+\item[{const int}]{idx}
+\end{DoxyParamCaption}
+)}\hypertarget{SHAN__type_8h_a319a7a3259b544163e6c72aa0b2f4530}{}\label{SHAN__type_8h_a319a7a3259b544163e6c72aa0b2f4530}
+Converts shared mem send type in shared mem recv type. Finalizes receive in shared mem.
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighborhood\+\_\+id} & -\/ general neighborhood handle \\
+\hline
+{\em data\+\_\+segment} & -\/ used data segment \\
+\hline
+{\em type\+\_\+id} & -\/ used type id \\
+\hline
+{\em idx} & -\/ rank index in neighborhood\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+S\+U\+C\+C\+E\+SS in case of success, S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+E\+R\+R\+OR in case of error. 
+\end{DoxyReturn}
+\index{S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}!shan\+\_\+comm\+\_\+get\+\_\+remote@{shan\+\_\+comm\+\_\+get\+\_\+remote}}
+\index{shan\+\_\+comm\+\_\+get\+\_\+remote@{shan\+\_\+comm\+\_\+get\+\_\+remote}!S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}}
+\subsubsection[{\texorpdfstring{shan\+\_\+comm\+\_\+get\+\_\+remote(shan\+\_\+neighborhood\+\_\+t $\ast$neighborhood\+\_\+id, shan\+\_\+segment\+\_\+t $\ast$const data\+\_\+segment, int const type\+\_\+id, int const idx)}{shan_comm_get_remote(shan_neighborhood_t *neighborhood_id, shan_segment_t *const data_segment, int const type_id, int const idx)}}]{\setlength{\rightskip}{0pt plus 5cm}void shan\+\_\+comm\+\_\+get\+\_\+remote (
+\begin{DoxyParamCaption}
+\item[{{\bf shan\+\_\+neighborhood\+\_\+t} $\ast$}]{neighborhood\+\_\+id, }
+\item[{{\bf shan\+\_\+segment\+\_\+t} $\ast$const}]{data\+\_\+segment, }
+\item[{int const}]{type\+\_\+id, }
+\item[{int const}]{idx}
+\end{DoxyParamCaption}
+)}\hypertarget{SHAN__type_8h_a9cc180e5b3e9c075498625cd61b16523}{}\label{SHAN__type_8h_a9cc180e5b3e9c075498625cd61b16523}
+Finalizes receive for remote comm
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighborhood\+\_\+id} & -\/ general neighborhood handle \\
+\hline
+{\em data\+\_\+segment} & -\/ used data segment \\
+\hline
+{\em type\+\_\+id} & -\/ used type id \\
+\hline
+{\em idx} & -\/ rank index in neighborhood\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+S\+U\+C\+C\+E\+SS in case of success, S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+E\+R\+R\+OR in case of error. 
+\end{DoxyReturn}
+\index{S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}!shan\+\_\+comm\+\_\+get\+\_\+type@{shan\+\_\+comm\+\_\+get\+\_\+type}}
+\index{shan\+\_\+comm\+\_\+get\+\_\+type@{shan\+\_\+comm\+\_\+get\+\_\+type}!S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}}
+\subsubsection[{\texorpdfstring{shan\+\_\+comm\+\_\+get\+\_\+type(type\+\_\+local\+\_\+t $\ast$type\+\_\+info, void $\ast$shm\+\_\+ptr, int num\+\_\+neighbors, shan\+\_\+element\+\_\+t $\ast$type\+\_\+element)}{shan_comm_get_type(type_local_t *type_info, void *shm_ptr, int num_neighbors, shan_element_t *type_element)}}]{\setlength{\rightskip}{0pt plus 5cm}int shan\+\_\+comm\+\_\+get\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{{\bf type\+\_\+local\+\_\+t} $\ast$}]{type\+\_\+info, }
+\item[{void $\ast$}]{shm\+\_\+ptr, }
+\item[{int}]{num\+\_\+neighbors, }
+\item[{{\bf shan\+\_\+element\+\_\+t} $\ast$}]{type\+\_\+element}
+\end{DoxyParamCaption}
+)}\hypertarget{SHAN__type_8h_aadc9431cf45a459770d1eb188bfd3c47}{}\label{SHAN__type_8h_aadc9431cf45a459770d1eb188bfd3c47}
+Getter function for type data
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+\_\+info} & -\/ type data struct (\hyperlink{SHAN__comm_8h}{S\+H\+A\+N\+\_\+comm.\+h}) \\
+\hline
+{\em shm\+\_\+ptr} & -\/ pointer to shared memory \\
+\hline
+{\em num\+\_\+neighbors} & -\/ rank local number of neighbors in neighborhood \\
+\hline
+{\em type\+\_\+element} & -\/ type element\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+S\+U\+C\+C\+E\+SS in case of success, S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+E\+R\+R\+OR in case of error. 
+\end{DoxyReturn}
+\index{S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}!shan\+\_\+comm\+\_\+type\+\_\+offset@{shan\+\_\+comm\+\_\+type\+\_\+offset}}
+\index{shan\+\_\+comm\+\_\+type\+\_\+offset@{shan\+\_\+comm\+\_\+type\+\_\+offset}!S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}}
+\subsubsection[{\texorpdfstring{shan\+\_\+comm\+\_\+type\+\_\+offset(shan\+\_\+neighborhood\+\_\+t $\ast$neighborhood\+\_\+id, int type\+\_\+id, int $\ast$$\ast$nelem\+\_\+send, int $\ast$$\ast$nelem\+\_\+recv, int $\ast$$\ast$send\+\_\+sz, int $\ast$$\ast$recv\+\_\+sz, long $\ast$$\ast$send\+\_\+offset, long $\ast$$\ast$recv\+\_\+offset)}{shan_comm_type_offset(shan_neighborhood_t *neighborhood_id, int type_id, int **nelem_send, int **nelem_recv, int **send_sz, int **recv_sz, long **send_offset, long **recv_offset)}}]{\setlength{\rightskip}{0pt plus 5cm}int shan\+\_\+comm\+\_\+type\+\_\+offset (
+\begin{DoxyParamCaption}
+\item[{{\bf shan\+\_\+neighborhood\+\_\+t} $\ast$}]{neighborhood\+\_\+id, }
+\item[{int}]{type\+\_\+id, }
+\item[{int $\ast$$\ast$}]{nelem\+\_\+send, }
+\item[{int $\ast$$\ast$}]{nelem\+\_\+recv, }
+\item[{int $\ast$$\ast$}]{send\+\_\+sz, }
+\item[{int $\ast$$\ast$}]{recv\+\_\+sz, }
+\item[{long $\ast$$\ast$}]{send\+\_\+offset, }
+\item[{long $\ast$$\ast$}]{recv\+\_\+offset}
+\end{DoxyParamCaption}
+)}\hypertarget{SHAN__type_8h_affaa110499283abb00fcc8f8c53de742}{}\label{SHAN__type_8h_affaa110499283abb00fcc8f8c53de742}
+Gets type data structure for node local ranks
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighborhood\+\_\+id} & -\/ general neighborhood handle \\
+\hline
+{\em type\+\_\+id} & -\/ used type id \\
+\hline
+{\em nelem\+\_\+send} & -\/ pointer to number of send elements in shared mem \\
+\hline
+{\em nelem\+\_\+recv} & -\/ pointer to number of recv elements in shared mem \\
+\hline
+{\em send\+\_\+sz} & -\/ pointer to send size in shared mem \\
+\hline
+{\em recv\+\_\+sz} & -\/ pointer to recv size in shared mem \\
+\hline
+{\em send\+\_\+offset} & -\/ pointer to offset of send elements in shared mem \\
+\hline
+{\em recv\+\_\+offset} & -\/ pointer to offset of recv elements in shared mem\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+S\+U\+C\+C\+E\+SS in case of success, S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+E\+R\+R\+OR in case of error. 
+\end{DoxyReturn}
+\index{S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}!shan\+\_\+get\+\_\+shared\+\_\+type@{shan\+\_\+get\+\_\+shared\+\_\+type}}
+\index{shan\+\_\+get\+\_\+shared\+\_\+type@{shan\+\_\+get\+\_\+shared\+\_\+type}!S\+H\+A\+N\+\_\+type.\+h@{S\+H\+A\+N\+\_\+type.\+h}}
+\subsubsection[{\texorpdfstring{shan\+\_\+get\+\_\+shared\+\_\+type(type\+\_\+local\+\_\+t $\ast$type\+\_\+info, shan\+\_\+neighborhood\+\_\+t $\ast$neighborhood\+\_\+id, int local\+\_\+rank, int num\+\_\+neighbors, int type\+\_\+id)}{shan_get_shared_type(type_local_t *type_info, shan_neighborhood_t *neighborhood_id, int local_rank, int num_neighbors, int type_id)}}]{\setlength{\rightskip}{0pt plus 5cm}int shan\+\_\+get\+\_\+shared\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{{\bf type\+\_\+local\+\_\+t} $\ast$}]{type\+\_\+info, }
+\item[{{\bf shan\+\_\+neighborhood\+\_\+t} $\ast$}]{neighborhood\+\_\+id, }
+\item[{int}]{local\+\_\+rank, }
+\item[{int}]{num\+\_\+neighbors, }
+\item[{int}]{type\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{SHAN__type_8h_ab8732eec39c8355b7f6b420ff147c4d6}{}\label{SHAN__type_8h_ab8732eec39c8355b7f6b420ff147c4d6}
+Returns type data structure for node local ranks
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+\_\+info} & -\/ type data struct (\hyperlink{SHAN__comm_8h}{S\+H\+A\+N\+\_\+comm.\+h}) \\
+\hline
+{\em neighborhood\+\_\+id} & -\/ general neighborhood handle \\
+\hline
+{\em local\+\_\+rank} & -\/ node local rank \\
+\hline
+{\em num\+\_\+neighbors} & -\/ number of neighbors \\
+\hline
+{\em type\+\_\+id} & -\/ used type id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+S\+U\+C\+C\+E\+SS in case of success, S\+H\+A\+N\+\_\+\+C\+O\+M\+M\+\_\+\+E\+R\+R\+OR in case of error. 
+\end{DoxyReturn}

@@ -1,0 +1,47 @@
+\hypertarget{structshan__element__t}{}\section{shan\+\_\+element\+\_\+t Struct Reference}
+\label{structshan__element__t}\index{shan\+\_\+element\+\_\+t@{shan\+\_\+element\+\_\+t}}
+
+
+{\ttfamily \#include $<$S\+H\+A\+N\+\_\+comm.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{structshan__element__t_a5ebc780b5d537ca7983bd7eb7ef8f772}{max\+Send\+Sz}\hypertarget{structshan__element__t_a5ebc780b5d537ca7983bd7eb7ef8f772}{}\label{structshan__element__t_a5ebc780b5d537ca7983bd7eb7ef8f772}
+
+\begin{DoxyCompactList}\small\item\em max send size per type (byte) \end{DoxyCompactList}\item 
+long \hyperlink{structshan__element__t_ac7b70205ec72204d189e7d4647db07c1}{max\+Recv\+Sz}\hypertarget{structshan__element__t_ac7b70205ec72204d189e7d4647db07c1}{}\label{structshan__element__t_ac7b70205ec72204d189e7d4647db07c1}
+
+\begin{DoxyCompactList}\small\item\em max recv size per type (byte) \end{DoxyCompactList}\item 
+int \hyperlink{structshan__element__t_a027fc8c9e8f89eab051d11ef8a3f5cde}{max\+\_\+nelem\+\_\+send}\hypertarget{structshan__element__t_a027fc8c9e8f89eab051d11ef8a3f5cde}{}\label{structshan__element__t_a027fc8c9e8f89eab051d11ef8a3f5cde}
+
+\begin{DoxyCompactList}\small\item\em max recv size per type (byte) \end{DoxyCompactList}\item 
+int \hyperlink{structshan__element__t_a63e06e116e876876ee9a91f901bc51aa}{max\+\_\+nelem\+\_\+recv}\hypertarget{structshan__element__t_a63e06e116e876876ee9a91f901bc51aa}{}\label{structshan__element__t_a63e06e116e876876ee9a91f901bc51aa}
+
+\begin{DoxyCompactList}\small\item\em max recv size per type (byte) \end{DoxyCompactList}\item 
+long \hyperlink{structshan__element__t_a4bc55fad290ee8a0549f8417641febb8}{Send\+Offset} \mbox{[}2\mbox{]}\hypertarget{structshan__element__t_a4bc55fad290ee8a0549f8417641febb8}{}\label{structshan__element__t_a4bc55fad290ee8a0549f8417641febb8}
+
+\begin{DoxyCompactList}\small\item\em local offset for send per type (byte) \end{DoxyCompactList}\item 
+long \hyperlink{structshan__element__t_a87999ca41b7ad758b21f8c9c512fc6b6}{Recv\+Offset} \mbox{[}2\mbox{]}\hypertarget{structshan__element__t_a87999ca41b7ad758b21f8c9c512fc6b6}{}\label{structshan__element__t_a87999ca41b7ad758b21f8c9c512fc6b6}
+
+\begin{DoxyCompactList}\small\item\em local offset for recv per type (byte) \end{DoxyCompactList}\item 
+long \hyperlink{structshan__element__t_a7b26e9b0e364bec29e7ba1bb9a46e116}{elem\+Offset}\hypertarget{structshan__element__t_a7b26e9b0e364bec29e7ba1bb9a46e116}{}\label{structshan__element__t_a7b26e9b0e364bec29e7ba1bb9a46e116}
+
+\begin{DoxyCompactList}\small\item\em element offset in shared mem \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__element__t_af2e5d10c172d699b00b5650bc24a9675}{local\+\_\+send\+\_\+count}\hypertarget{structshan__element__t_af2e5d10c172d699b00b5650bc24a9675}{}\label{structshan__element__t_af2e5d10c172d699b00b5650bc24a9675}
+
+\begin{DoxyCompactList}\small\item\em send stage counter array, per type \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__element__t_a49f150227cda8f135ad99e0ac1c98b53}{local\+\_\+recv\+\_\+count}\hypertarget{structshan__element__t_a49f150227cda8f135ad99e0ac1c98b53}{}\label{structshan__element__t_a49f150227cda8f135ad99e0ac1c98b53}
+
+\begin{DoxyCompactList}\small\item\em recv stage counter array, per type \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__element__t_ad7a071488213341a6630658fb441f97a}{local\+\_\+ack\+\_\+count}\hypertarget{structshan__element__t_ad7a071488213341a6630658fb441f97a}{}\label{structshan__element__t_ad7a071488213341a6630658fb441f97a}
+
+\begin{DoxyCompactList}\small\item\em acknowledge stage counter array, per type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+comm struct, holds all communication information per type. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{SHAN__comm_8h}{S\+H\+A\+N\+\_\+comm.\+h}\end{DoxyCompactItemize}

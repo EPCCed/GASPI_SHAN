@@ -1,0 +1,134 @@
+\begin{theindex}
+
+  \item {F\+\_\+\+S\+H\+A\+N.\+h}
+    \subitem {f\+\_\+shan\+\_\+alloc\+\_\+shared}, \hyperpage{12}
+    \subitem {f\+\_\+shan\+\_\+comm\+\_\+notify\+\_\+or\+\_\+write}, 
+		\hyperpage{12}
+    \subitem {f\+\_\+shan\+\_\+comm\+\_\+wait4\+All}, \hyperpage{12}
+    \subitem {f\+\_\+shan\+\_\+comm\+\_\+wait4\+All\+Recv}, 
+		\hyperpage{13}
+    \subitem {f\+\_\+shan\+\_\+comm\+\_\+wait4\+All\+Send}, 
+		\hyperpage{13}
+    \subitem {f\+\_\+shan\+\_\+free\+\_\+comm}, \hyperpage{13}
+    \subitem {f\+\_\+shan\+\_\+free\+\_\+shared}, \hyperpage{14}
+    \subitem {f\+\_\+shan\+\_\+init\+\_\+comm}, \hyperpage{14}
+    \subitem {f\+\_\+shan\+\_\+type\+\_\+offset}, \hyperpage{14}
+  \item {f\+\_\+shan\+\_\+alloc\+\_\+shared}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{12}
+  \item {f\+\_\+shan\+\_\+comm\+\_\+notify\+\_\+or\+\_\+write}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{12}
+  \item {f\+\_\+shan\+\_\+comm\+\_\+wait4\+All}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{12}
+  \item {f\+\_\+shan\+\_\+comm\+\_\+wait4\+All\+Recv}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{13}
+  \item {f\+\_\+shan\+\_\+comm\+\_\+wait4\+All\+Send}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{13}
+  \item {f\+\_\+shan\+\_\+free\+\_\+comm}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{13}
+  \item {f\+\_\+shan\+\_\+free\+\_\+shared}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{14}
+  \item {f\+\_\+shan\+\_\+init\+\_\+comm}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{14}
+  \item {f\+\_\+shan\+\_\+type\+\_\+offset}
+    \subitem {F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {include/\+F\+\_\+\+S\+H\+A\+N.\+h}, \hyperpage{11}
+  \item {include/\+S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{15}
+  \item {include/\+S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{21}
+  \item {include/\+S\+H\+A\+N\+\_\+type.\+h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {S\+H\+A\+N\+\_\+comm.\+h}
+    \subitem {shan\+\_\+comm\+\_\+free\+\_\+comm}, \hyperpage{16}
+    \subitem {shan\+\_\+comm\+\_\+init\+\_\+comm}, \hyperpage{16}
+    \subitem {shan\+\_\+comm\+\_\+local\+\_\+rank}, \hyperpage{17}
+    \subitem {shan\+\_\+comm\+\_\+notify\+\_\+or\+\_\+write}, 
+		\hyperpage{17}
+    \subitem {shan\+\_\+comm\+\_\+shmem\+Barrier}, \hyperpage{18}
+    \subitem {shan\+\_\+comm\+\_\+test4\+Recv}, \hyperpage{18}
+    \subitem {shan\+\_\+comm\+\_\+test4\+Send}, \hyperpage{19}
+    \subitem {shan\+\_\+comm\+\_\+wait4\+All}, \hyperpage{19}
+    \subitem {shan\+\_\+comm\+\_\+wait4\+All\+Recv}, \hyperpage{19}
+    \subitem {shan\+\_\+comm\+\_\+wait4\+All\+Send}, \hyperpage{20}
+    \subitem {shan\+\_\+comm\+\_\+wait4\+Recv}, \hyperpage{20}
+    \subitem {shan\+\_\+comm\+\_\+wait4\+Send}, \hyperpage{21}
+    \subitem {shan\+\_\+increment\+\_\+local}, \hyperpage{21}
+  \item {S\+H\+A\+N\+\_\+segment.\+h}
+    \subitem {shan\+\_\+alloc\+\_\+shared}, \hyperpage{23}
+    \subitem {shan\+\_\+free\+\_\+shared}, \hyperpage{23}
+    \subitem {shan\+\_\+get\+\_\+shared\+\_\+ptr}, \hyperpage{24}
+    \subitem {shan\+\_\+notify\+\_\+increment\+\_\+shared}, 
+		\hyperpage{24}
+    \subitem {shan\+\_\+notify\+\_\+init\+\_\+shared}, \hyperpage{24}
+    \subitem {shan\+\_\+notify\+\_\+reset\+\_\+shared}, \hyperpage{25}
+    \subitem {shan\+\_\+notify\+\_\+test\+\_\+shared}, \hyperpage{25}
+  \item {S\+H\+A\+N\+\_\+type.\+h}
+    \subitem {shan\+\_\+comm\+\_\+get\+\_\+local}, \hyperpage{26}
+    \subitem {shan\+\_\+comm\+\_\+get\+\_\+remote}, \hyperpage{27}
+    \subitem {shan\+\_\+comm\+\_\+get\+\_\+type}, \hyperpage{27}
+    \subitem {shan\+\_\+comm\+\_\+type\+\_\+offset}, \hyperpage{27}
+    \subitem {shan\+\_\+get\+\_\+shared\+\_\+type}, \hyperpage{28}
+  \item {shan\+\_\+alloc\+\_\+shared}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{23}
+  \item {shan\+\_\+comm\+\_\+free\+\_\+comm}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{16}
+  \item {shan\+\_\+comm\+\_\+get\+\_\+local}
+    \subitem {S\+H\+A\+N\+\_\+type.\+h}, \hyperpage{26}
+  \item {shan\+\_\+comm\+\_\+get\+\_\+remote}
+    \subitem {S\+H\+A\+N\+\_\+type.\+h}, \hyperpage{27}
+  \item {shan\+\_\+comm\+\_\+get\+\_\+type}
+    \subitem {S\+H\+A\+N\+\_\+type.\+h}, \hyperpage{27}
+  \item {shan\+\_\+comm\+\_\+init\+\_\+comm}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{16}
+  \item {shan\+\_\+comm\+\_\+local\+\_\+rank}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{17}
+  \item {shan\+\_\+comm\+\_\+notify\+\_\+or\+\_\+write}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{17}
+  \item {shan\+\_\+comm\+\_\+shmem\+Barrier}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{18}
+  \item {shan\+\_\+comm\+\_\+test4\+Recv}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{18}
+  \item {shan\+\_\+comm\+\_\+test4\+Send}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{19}
+  \item {shan\+\_\+comm\+\_\+type\+\_\+offset}
+    \subitem {S\+H\+A\+N\+\_\+type.\+h}, \hyperpage{27}
+  \item {shan\+\_\+comm\+\_\+wait4\+All}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{19}
+  \item {shan\+\_\+comm\+\_\+wait4\+All\+Recv}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{19}
+  \item {shan\+\_\+comm\+\_\+wait4\+All\+Send}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{20}
+  \item {shan\+\_\+comm\+\_\+wait4\+Recv}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{20}
+  \item {shan\+\_\+comm\+\_\+wait4\+Send}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{21}
+  \item {shan\+\_\+element\+\_\+t}, \hyperpage{5}
+  \item {shan\+\_\+free\+\_\+shared}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{23}
+  \item {shan\+\_\+get\+\_\+shared\+\_\+ptr}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{24}
+  \item {shan\+\_\+get\+\_\+shared\+\_\+type}
+    \subitem {S\+H\+A\+N\+\_\+type.\+h}, \hyperpage{28}
+  \item {shan\+\_\+increment\+\_\+local}
+    \subitem {S\+H\+A\+N\+\_\+comm.\+h}, \hyperpage{21}
+  \item {shan\+\_\+neighborhood\+\_\+t}, \hyperpage{6}
+  \item {shan\+\_\+notification\+\_\+t}, \hyperpage{7}
+  \item {shan\+\_\+notify\+\_\+increment\+\_\+shared}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{24}
+  \item {shan\+\_\+notify\+\_\+init\+\_\+shared}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{24}
+  \item {shan\+\_\+notify\+\_\+reset\+\_\+shared}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{25}
+  \item {shan\+\_\+notify\+\_\+test\+\_\+shared}
+    \subitem {S\+H\+A\+N\+\_\+segment.\+h}, \hyperpage{25}
+  \item {shan\+\_\+remote\+\_\+t}, \hyperpage{7}
+  \item {shan\+\_\+segment\+\_\+t}, \hyperpage{8}
+
+  \indexspace
+
+  \item {type\+\_\+local\+\_\+t}, \hyperpage{9}
+
+\end{theindex}

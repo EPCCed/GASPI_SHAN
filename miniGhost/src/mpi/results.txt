@@ -1,0 +1,55 @@
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Communication strategy: one variable at a time (COMM_METHOD_SVAF)
+
+ Computation: 5-point difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:       80,      160,      160
+      Local Grid Dimension :       40,       40,       40
+
+ Number of variables:  5
+ Number of variables reduced each time step:  0; requested    0%.
+
+      Time steps:    400
+
+ MPI version, weak scaling
+
+      Task grid:     2,    4,    4
+
+  32 processes executing on machine Insert machine name here      
+
+ Program execution at 111832.767 on 20180725.
+
+ Total time for test (sec): 8.084E-01; clock resolution is 1.000E-09 per second.
+
+ -------------------------------------------------
+           Computational performance:
+ -------------------------------------------------
+
+       Time : avg, min, max secs:4.567E-01, 1.087E-02, 4.363E-01, 4.753E-01
+
+       Total GFLOPS:             1.013E+04
+       GFLOPS per process:       3.167E+02
+
+       Total floating point op   8.192E+12
+
+          Sums:                  6.554E+12
+          Mult:                  1.638E+12
+
+        Number of spikes set:            1
+
+ -------------------------------------------------
+      Inter-process communication statistics:
+ -------------------------------------------------
+
+       Avg (total,pack,send,wait,recv,unpack secs):    2.777E-01, 1.658E-01, 0.000E+00, 0.000E+00, 2.566E-03, 1.094E-01
+       StdDev (total,pack,send,wait,recv,unpack secs): 2.976E-02, 1.314E-02, 0.000E+00, 0.000E+00, 2.964E-04, 1.860E-02
+       Max (total,pack,send,wait,recv,unpack secs):    3.209E-01, 1.910E-01, 0.000E+00, 0.000E+00, 3.096E-03, 1.430E-01
+       Min (total,pack,send,wait,recv,unpack secs):    2.262E-01, 1.407E-01, 0.000E+00, 0.000E+00, 2.073E-03, 7.665E-02
+
+
+ ================== End report ===================
+

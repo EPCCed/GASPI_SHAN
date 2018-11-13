@@ -1,0 +1,6 @@
+<map id="include/SHAN_segment.h" name="include/SHAN_segment.h">
+<area shape="rect" id="node2" href="$shan__core_8h_source.html" title="src/shan_core.h" alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node3" href="$F__SHAN_8h.html" title="Wrapper functions for the SHAN library, mostly targeted at fortran applications. " alt="" coords="144,80,275,107"/>
+<area shape="rect" id="node4" href="$SHAN__comm_8h.html" title="SHAN_comm header for persistant communication in shared memory. " alt="" coords="299,80,458,107"/>
+<area shape="rect" id="node5" href="$SHAN__type_8h.html" title="SHAN_type header. Type conversion in shared memory. " alt="" coords="482,80,630,107"/>
+</map>

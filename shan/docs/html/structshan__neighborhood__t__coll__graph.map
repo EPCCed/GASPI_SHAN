@@ -1,0 +1,5 @@
+<map id="shan_neighborhood_t" name="shan_neighborhood_t">
+<area shape="rect" id="node2" href="$structshan__element__t.html" title="shan_element_t" alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node3" href="$structshan__remote__t.html" title="shan_remote_t" alt="" coords="145,5,253,32"/>
+<area shape="rect" id="node4" href="$structshan__segment__t.html" title="shan_segment_t" alt="" coords="277,5,395,32"/>
+</map>

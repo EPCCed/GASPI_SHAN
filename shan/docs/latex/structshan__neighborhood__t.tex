@@ -1,0 +1,89 @@
+\hypertarget{structshan__neighborhood__t}{}\section{shan\+\_\+neighborhood\+\_\+t Struct Reference}
+\label{structshan__neighborhood__t}\index{shan\+\_\+neighborhood\+\_\+t@{shan\+\_\+neighborhood\+\_\+t}}
+
+
+{\ttfamily \#include $<$S\+H\+A\+N\+\_\+comm.\+h$>$}
+
+
+
+Collaboration diagram for shan\+\_\+neighborhood\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structshan__neighborhood__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structshan__neighborhood__t_afaecce1d52b9a980388ca2b90a7433fa}{neighbor\+\_\+hood\+\_\+id}\hypertarget{structshan__neighborhood__t_afaecce1d52b9a980388ca2b90a7433fa}{}\label{structshan__neighborhood__t_afaecce1d52b9a980388ca2b90a7433fa}
+
+\begin{DoxyCompactList}\small\item\em neighborhood id \end{DoxyCompactList}\item 
+M\+P\+I\+\_\+\+Comm \hyperlink{structshan__neighborhood__t_af7e2a992b3fb65b9860377d26792ee2d}{M\+P\+I\+\_\+\+C\+O\+M\+M\+\_\+\+S\+HM}\hypertarget{structshan__neighborhood__t_af7e2a992b3fb65b9860377d26792ee2d}{}\label{structshan__neighborhood__t_af7e2a992b3fb65b9860377d26792ee2d}
+
+\begin{DoxyCompactList}\small\item\em shared M\+PI communicator \end{DoxyCompactList}\item 
+M\+P\+I\+\_\+\+Comm \hyperlink{structshan__neighborhood__t_a05e33890edbfea469b4190541740c98d}{M\+P\+I\+\_\+\+C\+O\+M\+M\+\_\+\+A\+LL}\hypertarget{structshan__neighborhood__t_a05e33890edbfea469b4190541740c98d}{}\label{structshan__neighborhood__t_a05e33890edbfea469b4190541740c98d}
+
+\begin{DoxyCompactList}\small\item\em global M\+PI communicator \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_a301d36655cb14aa2bce6a47a1ac58653}{num\+\_\+neighbors}\hypertarget{structshan__neighborhood__t_a301d36655cb14aa2bce6a47a1ac58653}{}\label{structshan__neighborhood__t_a301d36655cb14aa2bce6a47a1ac58653}
+
+\begin{DoxyCompactList}\small\item\em num comm partners (neighbors) \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_a220330e5f5b0edb6bdff6b265ea5905f}{num\+\_\+local}\hypertarget{structshan__neighborhood__t_a220330e5f5b0edb6bdff6b265ea5905f}{}\label{structshan__neighborhood__t_a220330e5f5b0edb6bdff6b265ea5905f}
+
+\begin{DoxyCompactList}\small\item\em node local number of comm partners \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__neighborhood__t_ada9cf12a5dda7681042224a9451134dd}{neighbors}\hypertarget{structshan__neighborhood__t_ada9cf12a5dda7681042224a9451134dd}{}\label{structshan__neighborhood__t_ada9cf12a5dda7681042224a9451134dd}
+
+\begin{DoxyCompactList}\small\item\em list of neighbors, per rank \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__neighborhood__t_a598f50b99c0c43e6185f2768e6d26d20}{Remote\+Comm\+Index}\hypertarget{structshan__neighborhood__t_a598f50b99c0c43e6185f2768e6d26d20}{}\label{structshan__neighborhood__t_a598f50b99c0c43e6185f2768e6d26d20}
+
+\begin{DoxyCompactList}\small\item\em the remote index corresponding to own rank \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__neighborhood__t_a7f242a84be34d7098136a4e29e461258}{Remote\+Num\+Neighbors}\hypertarget{structshan__neighborhood__t_a7f242a84be34d7098136a4e29e461258}{}\label{structshan__neighborhood__t_a7f242a84be34d7098136a4e29e461258}
+
+\begin{DoxyCompactList}\small\item\em remote number of neighbors for Remote\+Comm\+Index \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_af69002e058000abbcbebab83632eadff}{num\+\_\+type}\hypertarget{structshan__neighborhood__t_af69002e058000abbcbebab83632eadff}{}\label{structshan__neighborhood__t_af69002e058000abbcbebab83632eadff}
+
+\begin{DoxyCompactList}\small\item\em num types \end{DoxyCompactList}\item 
+long $\ast$ \hyperlink{structshan__neighborhood__t_aff6024d0240bae9fcda7c7810706e2cc}{type\+Offset}\hypertarget{structshan__neighborhood__t_aff6024d0240bae9fcda7c7810706e2cc}{}\label{structshan__neighborhood__t_aff6024d0240bae9fcda7c7810706e2cc}
+
+\begin{DoxyCompactList}\small\item\em type offsets for all node local ranks \end{DoxyCompactList}\item 
+\hyperlink{structshan__segment__t}{shan\+\_\+segment\+\_\+t} \hyperlink{structshan__neighborhood__t_a6327fe11775d0b3ed3c256865f5cd52c}{shared\+\_\+segment}\hypertarget{structshan__neighborhood__t_a6327fe11775d0b3ed3c256865f5cd52c}{}\label{structshan__neighborhood__t_a6327fe11775d0b3ed3c256865f5cd52c}
+
+\begin{DoxyCompactList}\small\item\em shared window for local communication \end{DoxyCompactList}\item 
+\hyperlink{structshan__element__t}{shan\+\_\+element\+\_\+t} $\ast$ \hyperlink{structshan__neighborhood__t_a30a4cb5c30b44753136a36ca493fcf19}{type\+\_\+element}\hypertarget{structshan__neighborhood__t_a30a4cb5c30b44753136a36ca493fcf19}{}\label{structshan__neighborhood__t_a30a4cb5c30b44753136a36ca493fcf19}
+
+\begin{DoxyCompactList}\small\item\em local comm data for remote communication. \end{DoxyCompactList}\item 
+long \hyperlink{structshan__neighborhood__t_a4e8665c692837d5851b87fb6d843f71c}{remote\+Sz}\hypertarget{structshan__neighborhood__t_a4e8665c692837d5851b87fb6d843f71c}{}\label{structshan__neighborhood__t_a4e8665c692837d5851b87fb6d843f71c}
+
+\begin{DoxyCompactList}\small\item\em remote comm size, all types, send + recv (byte) \end{DoxyCompactList}\item 
+\hyperlink{structshan__remote__t}{shan\+\_\+remote\+\_\+t} \hyperlink{structshan__neighborhood__t_a570ccb16f2652f23e733c69d8bb3022a}{remote\+\_\+segment}\hypertarget{structshan__neighborhood__t_a570ccb16f2652f23e733c69d8bb3022a}{}\label{structshan__neighborhood__t_a570ccb16f2652f23e733c69d8bb3022a}
+
+\begin{DoxyCompactList}\small\item\em private segment for remote communication \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_a4d30862e28f83fda7d13027d65027421}{n\+Proc\+Local}\hypertarget{structshan__neighborhood__t_a4d30862e28f83fda7d13027d65027421}{}\label{structshan__neighborhood__t_a4d30862e28f83fda7d13027d65027421}
+
+\begin{DoxyCompactList}\small\item\em num local ranks in shared mem \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_a47e7148518b93b94c3e8c142c1420991}{i\+Proc\+Local}\hypertarget{structshan__neighborhood__t_a47e7148518b93b94c3e8c142c1420991}{}\label{structshan__neighborhood__t_a47e7148518b93b94c3e8c142c1420991}
+
+\begin{DoxyCompactList}\small\item\em local rank id \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_a4653c428444c2a21348040713122081f}{n\+Proc\+Global}\hypertarget{structshan__neighborhood__t_a4653c428444c2a21348040713122081f}{}\label{structshan__neighborhood__t_a4653c428444c2a21348040713122081f}
+
+\begin{DoxyCompactList}\small\item\em num global ranks \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_abce576cf20a429fd2c9d6385b8cd5949}{i\+Proc\+Global}\hypertarget{structshan__neighborhood__t_abce576cf20a429fd2c9d6385b8cd5949}{}\label{structshan__neighborhood__t_abce576cf20a429fd2c9d6385b8cd5949}
+
+\begin{DoxyCompactList}\small\item\em global rank id \end{DoxyCompactList}\item 
+int \hyperlink{structshan__neighborhood__t_a82b099408b246aaec24805ae58f782c6}{master}\hypertarget{structshan__neighborhood__t_a82b099408b246aaec24805ae58f782c6}{}\label{structshan__neighborhood__t_a82b099408b246aaec24805ae58f782c6}
+
+\begin{DoxyCompactList}\small\item\em master of shared segment (local rank 0) \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__neighborhood__t_add15074f417ea77570915a4b91433122}{remote\+\_\+master}\hypertarget{structshan__neighborhood__t_add15074f417ea77570915a4b91433122}{}\label{structshan__neighborhood__t_add15074f417ea77570915a4b91433122}
+
+\begin{DoxyCompactList}\small\item\em global list of masters \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structshan__neighborhood__t_a4fabbed69a9715f87876a36a4a88c26a}{local\+\_\+stage\+\_\+count}\hypertarget{structshan__neighborhood__t_a4fabbed69a9715f87876a36a4a88c26a}{}\label{structshan__neighborhood__t_a4fabbed69a9715f87876a36a4a88c26a}
+
+\begin{DoxyCompactList}\small\item\em generic stage counter for wait4\+All(Send/\+Recv) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+neighborhood comm struct, holds all communication information for the neighborhood. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{SHAN__comm_8h}{S\+H\+A\+N\+\_\+comm.\+h}\end{DoxyCompactItemize}
